@@ -1,10 +1,15 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 import LandingPage from './Pages/LandingPage';
-import LoginPage from './Pages/LoginPage/LoginPage'
+import LoginPage from './Pages/LoginPage/LoginPage';
 import Home from './Pages/Home/Home';
+import Profile2 from './Pages/Profile2';
+import Project from './Pages/Project';
+import Library from './Pages/Library';
+import Discussions from './Pages/Discussion';
+// import Payment from './Pages/Payment';
 import UserRoute from './components/routes/UserRoute';
 import GuestRoute from './components/routes/GuestRoute';
 import SignUpPage from './Pages/SignUpPage/SignUpPage';
@@ -17,6 +22,7 @@ import ContReg4 from './Pages/contReg/ContReg4';
 import ContReg5 from './Pages/contReg/ContReg5';
 import ContReg6 from './Pages/contReg/ContReg6';
 import Payment from './Pages/Payment';
+// import Home from './Pages/Home';
 
 const App = ({ location }) => (
   <div>
@@ -42,7 +48,31 @@ const App = ({ location }) => (
       component={ForgotPassword}
     />
     <GuestRoute location={location} path="/login" exact component={LoginPage} />
-    <UserRoute location={location} path="/app" exact component={Main} />
+    <UserRoute location={location} path="/app" exact component={Home} />
+    <UserRoute
+      location={location}
+      path="/app/profile/:friend"
+      exact
+      component={Profile2}
+    />
+    <UserRoute
+      location={location}
+      path="/app/project"
+      exact
+      component={Project}
+    />
+    <UserRoute
+      location={location}
+      path="/app/library"
+      exact
+      component={Library}
+    />
+    <UserRoute
+      location={location}
+      path="/app/payment"
+      exact
+      component={Payment}
+    />
   </div>
 );
 
@@ -50,6 +80,6 @@ App.propTypes = {
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired
   }).isRequired
-}
+};
 
-export default App
+export default App;
