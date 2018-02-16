@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { Button, Icon } from "semantic-ui-react";
 import { getProjects } from "../actions/projects";
 
-const BASEURL = "http://membership-api.accinigeria.com/";
+const BASEURL = "http://acciapi.ml/";
 
 class MainProd extends React.Component {
   constructor(props) {

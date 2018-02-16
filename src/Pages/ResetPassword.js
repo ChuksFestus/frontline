@@ -3,7 +3,7 @@ import axios from "axios";
 import { Button, Form, Grid, Image } from "semantic-ui-react";
 import "./LoginPage/login.css";
 
-const BASEURL = "http://membership-api.accinigeria.com/";
+const BASEURL = "http://acciapi.ml/";
 
 export default class RestPassword extends React.Component {
   constructor(props) {

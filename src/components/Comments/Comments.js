@@ -16,8 +16,8 @@ import { connect } from "react-redux";
 import axios from "axios";
 import setAuthorizationHeader from "../../actions/setAuthorizationHeader";
 
-const BASEURL = "http://membership-api.accinigeria.com/";
-// const BASEURL = 'https://2968008f.ngrok.io/'
+// const BASEURL = "http://membership-api.accinigeria.com/";
+const BASEURL = 'http://acciapi.ml/'
 
 class Comments extends Component {
   constructor() {

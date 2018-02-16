@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { Tab, Grid, Label, Segment, Card, Button } from "semantic-ui-react";
 import axios from "axios";
 //payments/memberships
-const BASEURL = "http://membership-api.accinigeria.com/";
+const BASEURL = "http://acciapi.ml/";
 // const BASEURL = 'https://2968008f.ngrok.io/'
 
 class Payment extends Component {

@@ -2,7 +2,7 @@ import React from "react";
 import { Message } from "semantic-ui-react";
 import axios from "axios";
 
-const BASEURL = "http://membership-api.accinigeria.com/";
+const BASEURL = "http://acciapi.ml/";
 
 class Reject extends React.Component {
   componentDidMount() {

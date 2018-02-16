@@ -4,7 +4,7 @@ import axios from "axios";
 import { Grid, Card, Icon, Input, List, Button } from "semantic-ui-react";
 import { connect } from "react-redux";
 
-const BASEURL = "http://membership-api.accinigeria.com/";
+const BASEURL = "http://acciapi.ml/";
 
 const centerText = {
   textAlign: "center"

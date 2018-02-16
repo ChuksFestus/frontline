@@ -4,13 +4,6 @@ import React, { Component } from "react";
 import { Search, Grid } from "semantic-ui-react";
 import {connect} from 'react-redux'
 
-const source = _.times(5, () => ({
-  title: api.fetchUsers.companyName,
-  description: api.fetchUsers.companyName,
-  image: api.fetchUsers.companyAddress,
-  price: api.fetchUsers.companyBusiness
-}));
-
 class MainSearch extends Component {
   componentWillMount() {
     this.resetComponent();

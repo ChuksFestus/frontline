@@ -326,6 +326,7 @@ const panes = [
               {totalFriends} connections
               <br />
               <br />
+              
               <SearchFriend />
             </Card.Header>
           </Card.Content>

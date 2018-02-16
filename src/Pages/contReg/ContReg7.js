@@ -8,7 +8,7 @@ import { update } from "../../actions/auth";
 import { Redirect, withRouter } from "react-router-dom";
 import { paths } from "../../data/registrationPages";
 
-const BASEURL = "http://membership-api.accinigeria.com/";
+const BASEURL = "http://acciapi.ml/";
 
 class ContReg7 extends React.Component {
   constructor(props) {

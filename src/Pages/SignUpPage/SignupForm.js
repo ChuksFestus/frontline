@@ -11,7 +11,7 @@ import InlineError from "../../components/messages/InlineError";
 import "../LoginPage/login.css";
 import { userRegistered } from "../../actions/auth";
 
-const BASEURL = "http://membership-api.accinigeria.com/";
+const BASEURL = "http://acciapi.ml/";
 // const BASEURL = 'https://2968008f.ngrok.io/'
 
 class SignupForm extends React.Component {

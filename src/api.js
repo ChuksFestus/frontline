@@ -1,8 +1,8 @@
 import axios from "axios";
 
 // const BASEURL = "http://localhost:1337/";
-const BASEURL = "http://membership-api.accinigeria.com/";
-// const BASEURL = 'https://2968008f.ngrok.io/'
+// const BASEURL = "http://membership-api.accinigeria.com/";
+const BASEURL = 'http://acciapi.ml/'
 
 export default {
   user: {

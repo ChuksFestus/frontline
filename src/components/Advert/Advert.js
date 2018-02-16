@@ -2,7 +2,7 @@ import React from "react";
 import { Advertisement } from "semantic-ui-react";
 import "./Advert.css";
 
-const BASEURL = "http://membership-api.accinigeria.com/";
+const BASEURL = "http://acciapi.ml/";
 
 // class Advert extends React.Component {
 //   constructor() {
