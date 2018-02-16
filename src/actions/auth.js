@@ -34,6 +34,16 @@ export const oldMem = (data, history) => dispatch => {
       history.push({ pathname: "/old", state: { id: res.id } });
     });
 };
+export const login2 = credentials => dispatch =>
+  api.user.login(credentials).then(res => {
+    console.log(res);
+
+    localStorage.acciJWT = res.token;
+    setAuthorizationHeader(res.token);
+    console.log("res", res);
+    // dispatch(userLoggedIn(res));
+    return Promise.resolve(res);
+  });
 
 export const login = credentials => dispatch =>
   api.user.login(credentials).then(res => {
@@ -78,6 +88,25 @@ export const signup = (data, history) => dispatch => {
       }
     });
   });
+};
+
+export const signup2 = (data, history) => dispatch => {
+  api.signup
+    .reg(data)
+    .then(res => console.log(res.data))
+    .then(login2(data))
+    .then(res => {
+      // dispatch(authorizeUser({ email: data.email, password: data.password }))
+      dispatch(userLoggedIn(res));
+      console.log("success", res);
+      history.push({
+        pathname: "/cont",
+        state: {
+          id: res.id
+        }
+      });
+    })
+    .then(console.log("something again"));
 };
 
 // update on user

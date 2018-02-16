@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { signup } from "../../actions/auth";
+import { signup2 } from "../../actions/auth";
 import { Message, Grid, Image, Icon } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 
@@ -23,7 +23,7 @@ class SignupPage extends React.Component {
               src="http://www.accinigeria.com/wp-content/uploads/2017/10/ACCIHD2-2.png"
             />
 
-            <SignupForm registerUser={this.props.signup} />
+            <SignupForm registerUser={this.props.signup2} />
             <Message>
               already have an account?{" "}
               <Link to="/login" style={{ color: "var(--main-blue)" }}>
@@ -86,4 +86,4 @@ SignupPage.propTypes = {
   login: PropTypes.func.isRequired
 };
 
-export default connect(null, { signup })(SignupPage);
+export default connect(null, { signup2 })(SignupPage);
