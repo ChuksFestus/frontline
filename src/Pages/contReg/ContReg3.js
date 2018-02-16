@@ -222,20 +222,22 @@ class ContReg3 extends React.Component {
                 <label>
                   Upload Passport Photographs of the Company Representative(s)
                 </label>
-                <Form.Input
+                <input
                   type="file"
                   name="companyRepPassportUrl1"
                   onChange={this.handleChange}
+                  accept=".pdf, image/*"
                 />
               </Form.Field>
               <Form.Field>
                 <label>
                   Upload curriculum Vitae of Company Representative(s)
                 </label>
-                <Form.Input
+                <input
                   type="file"
                   name="companyRepCVurl"
                   onChange={this.handleChange}
+                  accept=".pdf, image/*"
                 />
               </Form.Field>
             </Grid.Column>
@@ -266,20 +268,22 @@ class ContReg3 extends React.Component {
                 <label>
                   Upload Passport Photographs of the Company Representative(s)
                 </label>
-                <Form.Input
+                <input
                   type="file"
                   name="companyRepPassportUrl2"
                   onChange={this.handleChange}
+                  accept=".pdf, image/*"
                 />
               </Form.Field>
               <Form.Field>
                 <label>
                   Upload curriculum Vitae of Company Representative(s)
                 </label>
-                <Form.Input
+                <input
                   type="file"
                   name="companyCOIUrl"
                   onChange={this.handleChange}
+                  accept=".pdf, image/*"
                 />
               </Form.Field>
             </Grid.Column>
@@ -290,10 +294,11 @@ class ContReg3 extends React.Component {
                 <label style={{ textAlign: 'center' }}>
                   Upload CAC document
                 </label>
-                <Form.Input
+                <input
                   type="file"
                   name="companyRepCVUrl2"
                   onChange={this.handleChange}
+                  accept=".pdf, image/*"
                 />
               </Form.Field>
             </Grid.Column>
